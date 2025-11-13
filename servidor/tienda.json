@@ -1,0 +1,54 @@
+{
+  "categorias": [
+    {
+      "id_categoria": 1,
+      "nombre": "Fútbol"
+    },
+    {
+      "id_categoria": 2,
+      "nombre": "Running"
+    },
+    {
+      "id_categoria": 3,
+      "nombre": "Fitness y Gimnasio"
+    }
+  ],
+  "productos": [
+    {
+      "id": 101,
+      "nombre": "Balón oficial de La Liga",
+      "descripcion": "Siente la pasión de las mejores ligas profesionales. Puma trae los balones de la liga 2025-2026  y llena los campos de blanco, azul. negro y rojo. Cada detalle de diseño refleja los jugadores y valores del deporte rey, acercándote a las sensaciones que sientes cuando tocas el balón en el campo.",
+      "precio": 30.50,
+      "destacado": true,
+      "id_categoria": 1,
+      "imagen": "https://contents.mediadecathlon.com/p2955077/k$4ac556bb2a4746f7dfb73af350dab33c/picture.jpg"
+    },
+    {
+      "id": 201,
+      "nombre": "Zapatillas de Running Ultraligeras",
+      "descripcion": "Amortiguación reactiva y transpiración superior.",
+      "precio": 95.50,
+      "destacado": true,
+      "id_categoria": 2,
+      "imagen": "https://img01.ztat.net/article/spp-media-p1/4cb72fe1c8904e11b3657998c76e50a9/369354d66e794cf6a0f78adc71a61d82.jpg?imwidth=1800&filter=packshot"
+    },
+    {
+      "id": 301,
+      "nombre": "Mancuernas Ajustables (2kg-24kg)",
+      "descripcion": "Juego de mancuernas con peso variable para entrenamiento en casa.",
+      "precio": 90.50,
+      "destacado": false,
+      "id_categoria": 3,
+      "imagen": "https://homexgym.com/wp-content/uploads/2023/08/mancuerna-ajustable-2kgs-24kgs-1ud.jpg"
+    },
+    {
+      "id": 102,
+      "nombre": "Camiseta adidas España Primera Equipación Mundial 2026",
+      "descripcion": "La camiseta España Primera Equipación Mundial 2026 es un homenaje a la pasión y el legado del fútbol español. Inspirada en los vibrantes colores de la bandera española, está diseñada para llamar la atención, tanto dentro como fuera del campo. La tecnología Climacool expulsa y disipa el sudor para mantener la piel fresca y seca, de modo que nada te distraiga del partido. El tejido de punto interlock de secado rápido te da comodidad durante los partidos intensos, para que puedas centrarte en dar el máximo. Su corte entallado crea una silueta elegante que se mueve contigo, mientras que el cuello rib añade un aspecto clásico. Los elementos del logotipo adidas y el escudo de la selección completan la camiseta, añadiendo así un estilo elegante. ",
+      "precio": 99.00,
+      "destacado": true,
+      "id_categoria": 1,
+      "imagen": "https://dam.elcorteingles.es/producto/www-001032435105781-00.jpg?impolicy=Resize&width=1200&height=1200"
+    }
+  ]
+}
