@@ -1,0 +1,108 @@
+/*-- CSS RESET Y ESTILOS BÁSICOS --*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 1.6em;
+    font-weight: 700;
+}
+
+.main-nav a {
+    color:white;
+    text-decoration: none;
+    margin-left: 18px;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #ffc107;
+}
+
+/*--BOTONES---*/
+.btn {
+    padding: 10px 17px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.4s ease;
+}
+
+.btn-danger {
+    background-color: #e02235;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c81e2e;
+}
+
+/*--CUADRÍCULA DE PRODUCTOS---*/
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap:30px;
+    margin-top: 22spx;
+}
+
+.product-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 15px;
+    text-align: center;
+}
+
+/*--DISEÑO ADAPTABLE---*/
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-nav a {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
