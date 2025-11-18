@@ -94,6 +94,35 @@ body {
     text-align: center;
 }
 
+/* --- CUADRÍCULA DE CATEGORÍAS --- */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.category-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: 1px solid #e0e0e0;
+}
+
+.category-card:hover {
+    transform: scale(1.05); /* Efecto visual al pasar el ratón */
+    background-color: #f0f8ff; 
+}
+
+.category-card h3 {
+    color: #007bff;
+    font-size: 1.4em;
+}
+
 /*--DISEÑO ADAPTABLE---*/
 @media (max-width: 768px) {
     .main-header {
