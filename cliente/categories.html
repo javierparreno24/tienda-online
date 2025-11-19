@@ -8,6 +8,22 @@
         <script src="assets/js/categories.js" defer></script>
     </head>
     <body>
-        
+        <header class="main-header">
+            <h1 class="logo">JPG SPORTSHOP</h1>
+            <nav class="main-nav">
+                <a href="dashboard.html" class="nav-link">Dashboard</a>
+                <a href="cart.html">Carrito</a>
+                <button id="logout-button" class="btn btn-danger">Cerrar Sesión</button>
+            </nav>
+        </header>
+        <main class="container">
+            <h2>Explorar Categorias</h2>
+            <section id="category-grid" class="category-grid"></section>
+            <h2 id="products-title" style="display: none;">Productos en Categoría<span id="category-name"></span></h2>
+            <section id="products-by-category" class="product-grid"></section>
+        </main>
+        <script src="assets/js/storage.js"></script>
+        <script src="assets/js/categories.js"></script>
+        <script src="assets/js/dashboard.js"></script>
     </body>
 </html>
