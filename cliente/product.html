@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="product-title">Ficha de Producto</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .product-detail-container {
+            display: flex; gap: 40px; padding: 30px 0; align-items: flex-start;
+        }
+        .product-image { flex: 1; max-width: 500px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); }
+        .product-image img { width: 100%; height: auto; border-radius: 10px; object-fit: cover; }
+        .product-info-detail { flex: 1.5; }
+        .price { font-size: 2.5em; color: #dc3545; font-weight: bold; margin: 20px 0; }
+        
+        @media (max-width: 900px) {
+            .product-detail-container { flex-direction: column; }
+            .product-image, .product-info-detail { flex: none; width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <h1 class="logo">SportShop ⚽</h1>
+        <nav class="main-nav">
+            <a href="dashboard.html">Inicio</a>
+            <a href="categories.html">Categorías</a>
+            <a href="cart.html">🛒 Carrito</a>
+        </nav>
+        <button id="logout-btn" class="btn btn-danger">Cerrar Sesión</button>
+    </header>
+
+    <main class="container">
+        <div id="product-detail-area">
+            <p id="loading-status">Cargando detalles del producto...</p>
+        </div>
+        
+        <hr style="margin: 40px 0;">
+
+        <h2>Productos Vistos Recientemente</h2>
+        <section id="recently-viewed" class="product-grid">
+            </section>
+        
+    </main>
+    
+    <script src="assets/js/storage.js"></script> 
+    <script src="assets/js/product.js"></script> 
+    <script src="assets/js/dashboard.js"></script> 
+</body>
+</html>
