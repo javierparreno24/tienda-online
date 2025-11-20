@@ -1,5 +1,5 @@
 <?php
-    define('AUTH_TOKEN', 'tu_token_de_autenticacion_aqui');
+    define('AUTH_TOKEN', '123456789ABCDEF');
 
     function loadJsonData($filename) {
         if (!file_exists($filename)) {
@@ -7,7 +7,7 @@
             echo json_encode(["success" => false, "error" => "Archivo no encontrado: $filename"]);
             exit();
         }
-        json_content = file_get_contents($filename);
+        $json_content = file_get_contents($filename);
         $data = json_decode($json_content, true);
     }
     function checkToken(){

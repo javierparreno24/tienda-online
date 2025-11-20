@@ -5,7 +5,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
     const password = document.getElementById('password').value;
     const messageElement = document.getElementById('message');
 
-    const LOGIN_API_URL = 'http://localhost/tienda-online/server/login.php'; 
+    const LOGIN_API_URL = 'http://localhost/tienda-online/servidor/login.php'; 
 
     messageElement.textContent = 'Iniciando sesión...';
     messageElement.style.color = 'black';
