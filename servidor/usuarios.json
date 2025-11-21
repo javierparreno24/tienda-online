@@ -1,10 +1,10 @@
 [
     {
-        "usuario": "admin",
-        "contraseña": "Admin1"
+        "username": "admin",
+        "password": "Admin1"
     },
     {
-        "usuario": "cliente1",
-        "contraseña": "cliente1"
+        "username": "cliente1",
+        "password": "cliente1"
     }
 ]

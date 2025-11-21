@@ -7,7 +7,7 @@ function getTiendaData() {
 }
 
 function checkAuthentication() {
-    [span_0](start_span)[span_1](start_span)[span_2](start_span)// Requisito: Verificar que el usuario esté autenticado usando el token almacenado[span_0](end_span)[span_1](end_span)[span_2](end_span).
+    // Requisito: Verificar que el usuario esté autenticado usando el token almacenado.
     const token = localStorage.getItem('authToken');
     if (!token) {
         // Si no hay token, redirigir al login
@@ -20,7 +20,7 @@ function checkAuthentication() {
 
 function displayFeaturedProducts(tiendaData) {
     const container = document.getElementById('featured-products');
-    [span_3](start_span)// Filtramos los productos destacados[span_3](end_span)
+    // Filtramos los productos destacados
     const featured = tiendaData.productos.filter(p => p.destacado === true);
 
     if (featured.length === 0) {
@@ -44,11 +44,11 @@ function displayFeaturedProducts(tiendaData) {
 
 function setupLogout() {
     document.getElementById('logout-btn').addEventListener('click', () => {
-        [span_4](start_span)// Requisito: Eliminar todos los datos del localstorage al cerrar sesión[span_4](end_span).
-        localStorage.removeItem('authToken'); [span_5](start_span)// Token[span_5](end_span)
-        localStorage.removeItem('tiendaData'); [span_6](start_span)// JSON Productos y Categorías[span_6](end_span)
-        localStorage.removeItem('carrito'); [span_7](start_span)// Carrito de compras[span_7](end_span)
-        localStorage.removeItem('productosVistos'); [span_8](start_span)// JSON Productos recientes vistos[span_8](end_span)
+        // Requisito: Eliminar todos los datos del localstorage al cerrar sesión.
+        localStorage.removeItem('authToken'); // Token
+        localStorage.removeItem('tiendaData'); // JSON Productos y Categorías
+        localStorage.removeItem('carrito'); // Carrito de compras
+        localStorage.removeItem('productosVistos'); // JSON Productos recientes vistos
         
         alert('Sesión cerrada. Serás redirigido al login.');
         window.location.href = 'login.html';
@@ -64,7 +64,7 @@ function initDashboard() {
         return; // Detiene la ejecución si no está autenticado
     }
 
-    [span_9](start_span)[span_10](start_span)[span_11](start_span)// 3. Cargar datos desde LocalStorage[span_9](end_span)[span_10](end_span)[span_11](end_span)
+    // 3. Cargar datos desde LocalStorage
     const tiendaData = getTiendaData();
 
     if (!tiendaData) {
@@ -81,9 +81,27 @@ function initDashboard() {
     
     // 5. Inicializar el botón de Cierre de Sesión
     setupLogout();
-
 }
 
+function addToCart(productId) {
+    // Obtener carrito actual
+    let carrito = localStorage.getItem('carrito');
+    carrito = carrito ? JSON.parse(carrito) : [];
+    
+    // Verificar si el producto ya está en el carrito
+    const existingProduct = carrito.find(item => item.id === productId);
+    
+    if (existingProduct) {
+        existingProduct.cantidad++;
+    } else {
+        carrito.push({ id: productId, cantidad: 1 });
+    }
+    
+    // Guardar carrito actualizado
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+    
+    alert('Producto añadido al carrito');
+}
 // Iniciar el dashboard
 initDashboard();
 

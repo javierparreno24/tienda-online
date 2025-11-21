@@ -1,4 +1,4 @@
-// assets/js/cart.js - Lógica de Carrito y Validación de Compra
+
 
 const CART_CONTENT_DIV = document.getElementById('cart-content');
 const CART_TOTAL_SPAN = document.getElementById('cart-total-display');

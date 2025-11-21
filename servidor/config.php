@@ -9,6 +9,8 @@
         }
         $json_content = file_get_contents($filename);
         $data = json_decode($json_content, true);
+        
+        return $data;
     }
     function checkToken(){
         //Obtener token de la cabecera Authorization

@@ -40,7 +40,7 @@
         echo json_encode([
             "success" => true,
             "token"=>AUTH_TOKEN,
-            "tienda" => $tienda_info
+            "tiendaData" => $tienda_info
         ]);
     } else {
         http_response_code(401); //Unauthorized
