@@ -5,9 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dashboard - Tienda Deportiva</title>
         <link rel="stylesheet" href="assets/css/style.css">
-        <!-- Cargar storage.js PRIMERO -->
-        <script src="assets/js/storage.js" defer></script>
-        <script src="assets/js/dashboard.js" defer></script>
     </head>
     <body>
         <header class="main-header">
@@ -15,21 +12,28 @@
             <nav class="main-nav">
                 <a href="categories.html" class="nav-link">Categorías</a>
                 <a href="cart.html">Carrito</a>
-                <button id="logout-btn" class="btn btn-danger">Cerrar Sesión</button>
             </nav>
+            <button id="logout-btn" class="btn btn-danger">Cerrar Sesión</button>
         </header>
+
         <div id="loading-status" class="status-message">Cargando datos...</div>
+        
         <main id="main-content" class="container" style="display:none;">
+            
             <h2>Productos Destacados</h2>
             <p class="subtitle">Explora nuestros productos más populares</p>
             <section id="featured-products" class="product-grid">
-                <!-- Los productos destacados se cargarán aquí dinámicamente -->
-            </section>  
+                </section>  
+            
             <hr>
+            
             <h2>Explorar Categorías</h2>
             <section id="category-list" class="category-list-grid">
-                <!-- Las categorías se cargarán aquí dinámicamente -->
+                <p>Ve a la sección de Categorías para ver todos los productos.</p>
             </section>
         </main>
+        
+        <script src="assets/js/storage.js"></script>
+        <script src="assets/js/dashboard.js"></script>
     </body>
 </html>

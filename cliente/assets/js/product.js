@@ -1,4 +1,3 @@
-// assets/js/product.js - Lógica de Ficha de Producto y Productos Vistos
 
 const DETAIL_AREA = document.getElementById('product-detail-area');
 const RECENTLY_VIEWED_CONTAINER = document.getElementById('recently-viewed');
