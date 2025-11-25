@@ -6,7 +6,7 @@ const CHECKOUT_BTN = document.getElementById('checkout-btn');
 const CLEAR_BTN = document.getElementById('clear-btn');
 const CHECKOUT_MESSAGE = document.getElementById('checkout-message');
 
-// CAMBIA ESTA URL a la de tu servidor local
+
 const CARRITO_API_URL = 'http://localhost/tienda-online/servidor/carrito.php'; 
 
 function renderCart() {

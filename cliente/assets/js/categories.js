@@ -3,9 +3,6 @@ const PRODUCTS_CONTAINER = document.getElementById('products-by-category');
 const CATEGORY_NAME_SPAN = document.getElementById('category-name');
 const PRODUCTS_TITLE = document.getElementById('products-title');
 
-/**
- * Muestra el listado de categorías al cargar la página, extrayéndolas de localStorage.
- */
 function displayCategories() {
     // getTiendaData() se asume que está definida en storage.js
     const tiendaData = getTiendaData(); 
@@ -31,11 +28,6 @@ function displayCategories() {
     });
 }
 
-/**
- * Muestra los productos filtrados por una categoría específica.
- * @param {number} categoryId - ID de la categoría a filtrar (debe coincidir con id_categoria del producto).
- * @param {string} categoryName - Nombre de la categoría.
- */
 function displayProductsByCategory(categoryId, categoryName) {
     const tiendaData = getTiendaData();
     // Filtramos los productos que coincidan con el id_categoria

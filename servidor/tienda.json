@@ -49,6 +49,15 @@
       "destacado": true,
       "id_categoria": 1,
       "imagen": "https://dam.elcorteingles.es/producto/www-001032435105781-00.jpg?impolicy=Resize&width=1200&height=1200"
+    },
+    {
+      "id": 202,
+      "nombre": "Guantes Essentials",
+      "descripcion": "Cuando bajan las temperaturas, ponte estos guantes adidas. Están confeccionados con un suave tejido de punto que mantiene las manos calentitas y cómodas. Gracias a su diseño clásico, estos guantes son ideales para el día a día. ",
+      "precio": 14.00,
+      "destacado": true,
+      "id_categoria": 2,
+      "imagen": "https://contents.mediadecathlon.com/m12153968/k$23d84a6cac6fb4e87d7e6a7697aaabd0/picture.jpg"
     }
   ]
 }
